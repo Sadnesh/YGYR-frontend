@@ -1,0 +1,28 @@
+@font-face {
+    font-family: avenir;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Avenir'), url('/public/fonts/avenir_roman_12.woff') format('woff')
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+}
+
+.cursor-info {
+    cursor: url("/public/cursors/cursor-two.png"), auto;
+}
+
+.popover-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 20;
+}
+
+.popover-arrow.top {
+    bottom: -8px;
+    border-width: 8px 8px 0 8px;
+    border-color: #ffffff transparent transparent transparent;
+}

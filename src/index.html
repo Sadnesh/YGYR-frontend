@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YGYR</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
+</head>
+
+<body class="">
+    <nav class="max-w-7xl mx-auto py-4 px-2 flex justify-between items-center sticky top-0 rounded bg-white z-10">
+        <div>
+            <strong>YGYR</strong>
+        </div>
+        <div>
+            <a href="" class="me-4 font-bold">Home</a>
+            <a href="" class="me-4 font-bold">Marketplace</a>
+            <a href="" class="me-4 font-bold">Support</a>
+            <a href="" class="me-4 font-bold bg-gray-800 rounded px-3 py-1 text-white hover:bg-gray-700">Sign
+                Up</a>
+        </div>
+    </nav>
+
+    <div x-data="{ section: 1 }" class="overflow-hidden">
+        <div x-show="section==1" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+            class="flex items-center min-h-[80vh] pt-10 max-w-7xl mx-auto px-4 relative"
+            style="background: url('/public/images/world-white.gif') right no-repeat;">
+            <div class="max-w-[700px] ">
+                <h1 class="text-3xl inline-block">
+                    <strong>Your Garbage </strong>
+                </h1>
+
+                <div x-data="{ open: false }" class="relative underline cursor-info inline-block">
+                    <span @click="open=!open" class="underline inline-block text-3xl">Your Responsibility</span>
+                    <div x-show="open" @click.outside="open = false"
+                        class="absolute z-10 -top-24 bg-white border border-gray-300 rounded p-4 shadow-md"
+                        id="popoverContent">
+                        <div class="popover-arrow top"></div>
+                        <div class="max-h-[50px] overflow-scroll" title="">
+                            <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                                impedit?</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit voluptas aliquam
+                    vero unde. Nisi magni tempore laudantium, libero sapiente minima eum corrupti et ex voluptatem
+                    officia a corporis dolore?
+                </p>
+                <a href="" class="bg-gray-800 rounded text-white py-2 px-3">Get Started</a>
+            </div>
+        </div>
+
+        <div x-show="section==2" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+            class="flex items-center min-h-[80vh] pt-10 max-w-7xl mx-auto px-4 relative"
+            style="background: url('/public/images/world-white.gif') right no-repeat;">
+            <div class="max-w-[700px] ">
+                <h1 class="text-3xl inline-block">
+                    <strong>Your Garbage </strong>
+                </h1>
+
+                <div x-data="{ open: false }" class="relative underline cursor-info inline-block">
+                    <span @click="open=!open" class="underline inline-block text-3xl">Your Responsibility</span>
+                    <div x-show="open" @click.outside="open = false"
+                        class="absolute z-10 -top-24 bg-white border border-gray-300 rounded p-4 shadow-md"
+                        id="popoverContent">
+                        <div class="popover-arrow top"></div>
+                        <div class="max-h-[50px] overflow-scroll" title="">
+                            <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                                impedit?</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit voluptas
+                    aliquam
+                    vero unde. Nisi magni tempore laudantium, libero sapiente minima eum corrupti et ex voluptatem
+                    officia a corporis dolore?
+                </p>
+                <a href="" class="bg-gray-800 rounded text-white py-2 px-3">Get Started</a>
+            </div>
+        </div>
+        <div x-show="section==3" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+            class="flex items-center min-h-[80vh] pt-10 max-w-7xl mx-auto px-4 relative"
+            style="background: url('/public/images/world-white.gif') right no-repeat;">
+            <div class="max-w-[700px] ">
+                <h1 class="text-3xl inline-block">
+                    <strong>Your Garbage </strong>
+                </h1>
+
+                <div x-data="{ open: false }" class="relative underline cursor-info inline-block">
+                    <span @click="open=!open" class="underline inline-block text-3xl">Your Responsibility</span>
+                    <div x-show="open" @click.outside="open = false"
+                        class="absolute z-10 -top-24 bg-white border border-gray-300 rounded p-4 shadow-md"
+                        id="popoverContent">
+                        <div class="popover-arrow top"></div>
+                        <div class="max-h-[50px] overflow-scroll" title="">
+                            <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Animi,
+                                impedit?</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit voluptas
+                    aliquam
+                    vero unde. Nisi magni tempore laudantium, libero sapiente minima eum corrupti et ex
+                    voluptatem
+                    officia a corporis dolore?
+                </p>
+                <a href="" class="bg-gray-800 rounded text-white py-2 px-3">Get Started</a>
+            </div>
+        </div>
+        <div x-show="section==4" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+            class="flex items-center min-h-[80vh] pt-10 max-w-7xl mx-auto px-4 relative"
+            style="background: url('/public/images/world-white.gif') right no-repeat;">
+            <div class="max-w-[700px] ">
+                <h1 class="text-3xl inline-block">
+                    <strong>Your Garbage </strong>
+                </h1>
+
+                <div x-data="{ open: false }" class="relative underline cursor-info inline-block">
+                    <span @click="open=!open" class="underline inline-block text-3xl">Your
+                        Responsibility</span>
+                    <div x-show="open" @click.outside="open = false"
+                        class="absolute z-10 -top-24 bg-white border border-gray-300 rounded p-4 shadow-md"
+                        id="popoverContent">
+                        <div class="popover-arrow top"></div>
+                        <div class="max-h-[50px] overflow-scroll" title="">
+                            <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Animi,
+                                impedit?</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit
+                    voluptas aliquam
+                    vero unde. Nisi magni tempore laudantium, libero sapiente minima eum corrupti et ex
+                    voluptatem
+                    officia a corporis dolore?
+                </p>
+                <a href="" class="bg-gray-800 rounded text-white py-2 px-3">Get Started</a>
+            </div>
+        </div>
+        <section
+            class="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap flex-row-reverse sm:flex-row">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-full flex justify-center items-center"
+                    :class="section == 1 ? 'bg-green-600' : 'bg-slate-100'">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg x-show="section==1" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <div x-show="section!=1" class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                </div>
+                <div class=" bg-gray-300 h-0.5 rounded w-20"></div>
+                <div class="w-10 h-10 rounded-full flex justify-center items-center"
+                    :class="section == 2 ? 'bg-green-600' : 'bg-slate-100'">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg x-show="section==2" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <div x-show="section!=2" class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                </div>
+                <div class=" bg-gray-300 h-0.5 rounded w-20"></div>
+                <div class="w-10 h-10 bg-slate-100 rounded-full flex justify-center items-center"
+                    :class="section == 3 ? 'bg-green-600' : 'bg-slate-100'">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg x-show="section==3" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <div x-show="section!=3" class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                </div>
+                <div class=" bg-gray-300 h-0.5 rounded w-20"></div>
+                <div class="w-10 h-10 bg-slate-100 rounded-full flex justify-center items-center"
+                    :class="section == 4 ? 'bg-green-600' : 'bg-slate-100'">
+                    <?xml  version="1.0" encoding="utf-8"?>
+                    <svg x-show="section==4" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#ffffff" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                    <div x-show="section!=4" class="w-2 h-2 bg-gray-600 rounded-full"></div>
+                </div>
+            </div>
+            <div class="sm:mt-0 mt-4">
+                <button class="me-5" @click="section>1 ? (section=section-1 ): null">&larr;</button>
+                <button class="ms-5" @click="section<4 ? (section=section+1 ): null">&rarr;</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
